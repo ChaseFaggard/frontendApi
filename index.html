@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end API</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container text-center p-5">
+        <div class="jumbotron py-4 px-2 mb-5">
+            <h2 class="py-3 px-2">Activity Generator</h2>
+            <p class="lead p-3 m-3">Feeling bored? <br> Enter a category and we'll give you a random acitivty to do</p>
+        </div>  
+        <form id="form" class="form" onSubmit="handleSubmit()">
+            <input 
+                class="btn btn-success px-4 py-2 mx-1"
+                id=""
+                type="submit"
+                name="submit"
+                value="Go"
+            />
+            <input 
+                id="value" 
+                class="btn border px-3 py-2 mx-2"
+                type="text" 
+                placeholder="Enter text..." 
+                name="result" 
+                autoComplete="off"
+                value=""
+                required
+            />
+        </form>
+        <h4 id="result" class="py-5 px-3 border m-5"></h4>
+    </div>
+    <script src="js/searchApi.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

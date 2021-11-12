@@ -1,0 +1,9 @@
+#result {
+    display: none;
+    border-radius: 5px;
+}
+
+.jumbotron {
+    background: #F4F6F7;
+    color: #404040;
+}
